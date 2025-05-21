@@ -12,7 +12,7 @@
     </div>
     
     <div class="container">
-        <form class="form-cadastro">
+        <form id="recoveryForm" class="form-cadastro">
             <div class="campo-form">
                 <input type="text" placeholder="Nome" required>
             </div>
@@ -37,12 +37,26 @@
                 <input type="password" placeholder="Senha" required>
             </div>
             
-            <a type="submit" class="btn">Cadastrar</a>
+            <button type="submit" class="btn">Cadastrar</button>
         </form>
         
         <div class="centro">
-            <a class="txt-white" href="#">Possui Cadastro? Clique Aqui</a>
+            <a class="txt-white" href="login.html">Possui Cadastro? Clique Aqui</a>
         </div>
     </div>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SUCESSO</h3>
+            </div>
+            <div class="modal-body">
+                <p>CONTA CADASTRADA!</p>
+            </div>
+            <div class="modal-footer">
+                <a href="login.html" id="closeModal" class="modal-btn" style="text-align: center;text-decoration: none;">OK</a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

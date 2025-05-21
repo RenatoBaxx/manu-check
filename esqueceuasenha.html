@@ -12,18 +12,33 @@
     </div>
     
     <div class="container"> 
-        <form class="form-cadastro">
+        <div class="centro">
+        <span class="txt-white" style="font-weight: 600; font-size: 20px;">RECUPERAÇÃO DE CONTA</span>
+    </div>
+    <form id="recoveryForm" class="form-cadastro" style="margin-top: 180px;">
             <div class="campo-form">
                 <input type="text" placeholder="Email" required>
             </div>
 
             
-            <a type="submit" class="btn">Entrar</a>
+            <button type="submit" class="btn" style="margin-top: 30px;">Enviar</button>
         </form>
         
-        <div class="centro">
-            <a class="txt-white" href="#">Esqueceu sua senha? Clique Aqui</a>
+
+    </div>
+      <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SUCESSO</h3>
+            </div>
+            <div class="modal-body">
+                <p>VERIFIQUE SEU EMAIL</p>
+            </div>
+            <div class="modal-footer">
+                <button id="closeModal" class="modal-btn">OK</button>
+            </div>
         </div>
     </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

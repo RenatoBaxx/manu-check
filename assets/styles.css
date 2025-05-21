@@ -2,6 +2,7 @@
 body{
     background-color: #242424;
     font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
 }
 
 .centro{
@@ -18,9 +19,11 @@ body{
     background-color: #DAD9D9;
     padding: 15px;
     border-radius: 5px;
+    color: #000;
     width: 100%;
     text-align: center;
-    font-weight: 800;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .txt-white{
@@ -28,8 +31,6 @@ body{
     text-align: center;
     text-decoration: none;
 }
-
-/* Adicione ao final do seu CSS existente */
 
 .container {
     max-width: 400px;
@@ -81,3 +82,276 @@ body{
     background-color: #c0c0c0;
 }
 
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.add-car-btn {
+    display: block;
+    background-color: #DAD9D9;
+    color: #242424;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.add-car-btn:hover {
+    background-color: #c0c0c0;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.car-item:hover {
+    background-color: #444;
+}
+
+.car-item h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.backicon{
+    background-color: #D9D9D9;
+    padding: 15px;
+    color: #242424;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    
+
+}
+
+.header{
+    margin-bottom: 40px;
+}
+.car-item {
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.car-content {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    gap: 15px; 
+}
+
+.car-content img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    flex-shrink: 0; 
+}
+
+.car-info {
+    flex: 1;
+    min-width: 0; 
+}
+
+.car-info h3 {
+    margin: 0;
+    width: 120px;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 375px) {
+    .car-content {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .car-content img {
+        width: 80px;
+    }
+    
+    .car-info h3 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .car-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .car-content img {
+        width: 220px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+.menu-button {
+    top: 20px;
+    left: 20px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #010101;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar-title {
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 250%;
+}
+
+.sidebar-item {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar-item:hover {
+    color: #DAD9D9;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #333;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid #000000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid #000000;
+}
+
+.modal-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DAD9D9;
+    color: #242424;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-btn:hover {
+    background-color: #c0c0c0;
+}

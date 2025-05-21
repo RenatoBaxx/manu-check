@@ -3,30 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - ManuCheck</title>
+    <title>ManuCheck - Principal</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 <body>
-    <div class="centro">
-        <img src="./assets/img/logomanucheck.png" width="150px">
-    </div>
-    
-    <div class="container"> 
-        <form class="form-cadastro">
-            <div class="campo-form">
-                <input type="text" placeholder="CPF" required>
-            </div>
+    <div class="container">
+        <header class="header">
+    <button id="menuButton" class="menu-button backicon" style="margin-bottom: -20px;">
+        <i class="fi fi-rr-list"></i>
+    </button>
+        </header>
 
-            <div class="campo-form">
-                <input type="password" placeholder="Senha" required>
+        <main class="main-content">
+            <a href="#" class="add-car-btn">Adicionar Carro</a>
+            
+            <h2 class="subtitle">Selecionar carro para manutenção</h2>
+            
+            <div class="car-list">
+                <div class="car-item">
+                    <div class="car-content">
+                        <img src="./assets/img/argo.png" width="40px" alt="Fiat Argo">
+                        <div class="car-info">
+                            <h3>Fiat Argo 2020</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-item">
+                    <div class="car-content">
+                        <img src="./assets/img/toyota-yaris-2019-7.png" alt="Toyota Yaris">
+                        <div class="car-info">
+                            <h3>Toyota Yaris </br>2019</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-item">
+                    <div class="car-content">
+                        <img src="./assets/img/R.png" alt="Fiat Palio">
+                        <div class="car-info">
+                            <h3>Fiat Palio 1997</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <a type="submit" class="btn">Entrar</a>
-        </form>
-        
-        <div class="centro">
-            <a class="txt-white" href="#">Esqueceu sua senha? Clique Aqui</a>
+            <nav class="bottom-menu">
+                <a href="#" class="add-car-btn" style="width: 100%;">Minhas Manutenções</a>
+            </nav>
+        </main>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <h3 class="sidebar-title">ManuCheck</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="sidebar-item add-car-btn">Conhecer o APP?</a></li>
+                <li><a href="#" class="sidebar-item add-car-btn" style="margin-top: 120px;">Log Out</a></li>
+            </ul>
         </div>
     </div>
+    
+    <!-- Overlay para fechar o sidebar -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <!-- Seu conteúdo existente aqui -->
+    </main>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
